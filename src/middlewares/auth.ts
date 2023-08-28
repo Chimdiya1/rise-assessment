@@ -51,7 +51,6 @@ export function authRole(role: string) {
   return (req: reqWithUser, res: Response, next: NextFunction) => {
     try {
       const { user } = req;
-      console.log(user)
       if (!user)
         return res.status(403).send({
           message: "Not allowed",

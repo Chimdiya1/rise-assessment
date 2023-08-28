@@ -47,6 +47,12 @@ export const mockFileRepository: IFileRepository = {
   save() {
     return Promise.resolve(file);
   },
+  findById() {
+    return Promise.resolve(file);
+  },
+  findByName() {
+    return Promise.resolve(file);
+  },
 };
 export const mockFolderRepository: IFolderRepository = {
   create() {

@@ -9,6 +9,7 @@ describe("File controller", () => {
     download() {
       return Promise.resolve(undefined);
     },
+    flagAsUnsafe:jest.fn()
   };
 
   let fileController = FileController(mockFileService);

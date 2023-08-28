@@ -7,7 +7,7 @@ RUN npm cache clean --force
 RUN npm install
 COPY . .
 
-EXPOSE 10000
+EXPOSE 8000
 
 RUN npm run build
 
